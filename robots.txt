@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scanfitai.pages.dev/sitemap.xml

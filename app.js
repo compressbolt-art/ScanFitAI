@@ -24,9 +24,10 @@
   const I18N = {
     ko: {
       brand: 'ScanFitAI',
+      heroBrand: 'ScanFit',
       eyebrow: '반려동물 식단 분석',
-      title: '사료 분석, 7일 식단표, 운동처방',
-      copy: '이미지 하나 올리고 품종과 체중만 넣으면, 바로 읽히는 리포트와 실전용 운동처방이 나옵니다.',
+      title: '우리 아이를 스캔하세요.',
+      copy: '건강까지 맞춰드립니다.\n뽀디가 사료 라벨을 읽고 7일 식단표와 운동처방으로 연결합니다.\n강아지와 고양이의 사료 이미지를 올리면 성분, 칼로리, 급여량, 활동 루틴을 한 번에 분석합니다.',
       primary: '분석 시작',
       theme: '테마',
       lang: 'English',
@@ -76,9 +77,10 @@
     },
     en: {
       brand: 'ScanFitAI',
+      heroBrand: 'ScanFit',
       eyebrow: 'Pet food analysis',
-      title: 'Food analysis, 7-day meal plan, exercise prescription',
-      copy: 'Upload one image, add breed and weight, and get a readable report with a practical exercise plan.',
+      title: 'Scan your pet.',
+      copy: 'We tune the next step around health.\nPodi reads the label and connects it to a 7-day meal plan and exercise prescription.\nUpload a dog or cat food image to analyze ingredients, calories, serving size, and activity routine in one pass.',
       primary: 'Start Analysis',
       theme: 'Theme',
       lang: '한국어',
@@ -520,10 +522,10 @@
           <section class="hero">
             <div class="hero-copy">
               <div>
-                <div class="eyebrow">${t('eyebrow')}</div>
+                <div class="eyebrow">${t('heroBrand')}</div>
                 <h1>${t('title')}</h1>
               </div>
-              <p class="lede">${t('copy')}</p>
+              <p class="lede">${esc(t('copy')).replace(/\n/g, '<br>')}</p>
               <div class="stat-row">
                 <span class="stat">${state.lang === 'ko' ? '1장 업로드' : 'One upload'}</span>
                 <span class="stat">${state.lang === 'ko' ? '7일 식단표' : '7-day meal plan'}</span>

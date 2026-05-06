@@ -235,7 +235,7 @@
   <title>${title}</title>
   <style>
     :root{color-scheme:${state.theme === 'dark' ? 'dark' : 'light'}}
-    body{margin:0;font-family:Inter,system-ui,sans-serif;background:${vars.bg};color:${vars.text};}
+    body{margin:0;font-family:'Daum','Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:${vars.bg};color:${vars.text};}
     .page{max-width:980px;margin:0 auto;padding:32px 20px 48px;}
     .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;margin-bottom:20px}
     .title{font-size:42px;line-height:1.02;margin:0 0 12px;font-weight:800;letter-spacing:-.03em}
@@ -362,11 +362,10 @@
       radial-gradient(circle at 80% 18%, rgba(194,106,23,.12), transparent 26%),
       linear-gradient(180deg, ${vars.bg2}, ${vars.bg})
     `;
-    document.body.style.fontFamily = 'Manrope, Inter, system-ui, sans-serif';
+    document.body.style.fontFamily = "'Daum','Malgun Gothic','Apple SD Gothic Neo',sans-serif";
 
     app.innerHTML = `
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
         :root{
           --bg:${vars.bg};
           --bg2:${vars.bg2};

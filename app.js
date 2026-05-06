@@ -24,10 +24,10 @@
   const I18N = {
     ko: {
       brand: 'ScanFitAI',
-      heroBrand: 'ScanFit',
+      heroBrand: 'ScanFitAI',
       eyebrow: '반려동물 식단 분석',
       title: '우리 아이를 스캔하세요.',
-      copy: '건강까지 맞춰드립니다.\n뽀디가 사료 라벨을 읽고 7일 식단표와 운동처방으로 연결합니다.\n강아지와 고양이의 사료 이미지를 올리면 성분, 칼로리, 급여량, 활동 루틴을 한 번에 분석합니다.',
+      copy: '건강까지 맞춰드립니다.',
       primary: '분석 시작',
       theme: '테마',
       lang: 'English',
@@ -77,10 +77,10 @@
     },
     en: {
       brand: 'ScanFitAI',
-      heroBrand: 'ScanFit',
+      heroBrand: 'ScanFitAI',
       eyebrow: 'Pet food analysis',
       title: 'Scan your pet.',
-      copy: 'We tune the next step around health.\nPodi reads the label and connects it to a 7-day meal plan and exercise prescription.\nUpload a dog or cat food image to analyze ingredients, calories, serving size, and activity routine in one pass.',
+      copy: 'We tune the next step around health.',
       primary: 'Start Analysis',
       theme: 'Theme',
       lang: '한국어',
@@ -406,8 +406,8 @@
         .hero-copy{padding:28px 28px 24px;display:grid;gap:18px}
         .eyebrow{font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
         h1,h2,h3,h4,p{margin:0}
-        h1{font-size:clamp(34px,5vw,64px);line-height:1.02;letter-spacing:-.05em}
-        .lede{font-size:16px;line-height:1.75;max-width:62ch;color:var(--muted)}
+        h1{font-size:36px;line-height:1.15;letter-spacing:-.04em}
+        .lede{font-size:16px;line-height:1.6;max-width:34rem;color:var(--muted)}
         .stat-row{display:flex;gap:10px;flex-wrap:wrap}
         .stat{padding:10px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel-soft);font-size:13px;color:var(--muted);font-weight:700}
         .hero-art{position:relative;min-height:320px;overflow:hidden;display:grid;place-items:center;padding:22px}
@@ -503,7 +503,6 @@
           .shell{padding:16px 12px 28px}
           .hero-copy,.panel{padding:18px}
           .field-grid,.mini-grid,.detail-grid{grid-template-columns:1fr}
-          h1{font-size:clamp(30px,10vw,44px)}
         }
       </style>
 
